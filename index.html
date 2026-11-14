@@ -133,15 +133,15 @@ const SCRIPTS = [
 
 // Польша: тексты для украинских владельцев (по-украински, цены в zł) и для польских (по-польски)
 const PACKS_P = {
-  start: ["Старт", "1 990 zł", "✅ сайт польською з вашими послугами, цінами й фото робіт\n✅ онлайн-запис на вільний час\n✅ банер cookies і згода RODO\n✅ заявки одразу вам у Telegram"],
-  standard: ["Стандарт", "3 490 zł", "✅ усе зі «Старту»\n✅ кабінет: розклад, клієнти, заробіток"],
-  max: ["Максимум", "4 990 zł", "✅ усе зі «Стандарту»\n✅ кілька майстрів і запис до конкретного майстра\n✅ нагадування клієнтам\n✅ статистика й налаштування для Google Карт"]
+  start: ["Старт", "1 490 zł", "✅ сайт польською з вашими послугами, цінами й фото робіт\n✅ онлайн-запис на вільний час\n✅ банер cookies і згода RODO\n✅ заявки одразу вам у Telegram"],
+  standard: ["Стандарт", "2 990 zł", "✅ усе зі «Старту»\n✅ кабінет: розклад, клієнти, заробіток"],
+  max: ["Максимум", "4 490 zł", "✅ усе зі «Стандарту»\n✅ кілька майстрів і запис до конкретного майстра\n✅ нагадування клієнтам\n✅ статистика й налаштування для Google Карт"]
 };
 const smetaP = k => "Для вас раджу пакет «" + PACKS_P[k][0] + "» — " + PACKS_P[k][1] + ":\n" + PACKS_P[k][2] + "\n\nСтрок — " + TERM + ". Оплата: 50% на старті, 50% після запуску.\nПочинаємо?";
 const PACKS_PL = {
-  start: ["Start", "1 990 zł", "✅ strona z Państwa usługami, cennikiem i zdjęciami prac\n✅ rezerwacja online w wolnych terminach\n✅ baner cookies i zgoda RODO\n✅ powiadomienia o rezerwacjach na Telegramie"],
-  standard: ["Standard", "3 490 zł", "✅ wszystko z pakietu Start\n✅ panel: grafik, klienci, przychody"],
-  max: ["Maksimum", "4 990 zł", "✅ wszystko z pakietu Standard\n✅ kilka specjalistek i rezerwacja do konkretnej osoby\n✅ przypomnienia dla klientów\n✅ statystyki i konfiguracja w Mapach Google"]
+  start: ["Start", "1 490 zł", "✅ strona z Państwa usługami, cennikiem i zdjęciami prac\n✅ rezerwacja online w wolnych terminach\n✅ baner cookies i zgoda RODO\n✅ powiadomienia o rezerwacjach na Telegramie"],
+  standard: ["Standard", "2 990 zł", "✅ wszystko z pakietu Start\n✅ panel: grafik, klienci, przychody"],
+  max: ["Maksimum", "4 490 zł", "✅ wszystko z pakietu Standard\n✅ kilka specjalistek i rezerwacja do konkretnej osoby\n✅ przypomnienia dla klientów\n✅ statystyki i konfiguracja w Mapach Google"]
 };
 const smetaPL = k => "Polecam pakiet „" + PACKS_PL[k][0] + "” — " + PACKS_PL[k][1] + ":\n" + PACKS_PL[k][2] + "\n\nCzas realizacji: 5–7 dni. Płatność: 50% na start, 50% po uruchomieniu.\nZaczynamy?";
 const SCRIPTS_PUA = [
@@ -150,7 +150,7 @@ const SCRIPTS_PUA = [
   ["Смета «Старт»", smetaP("start")],
   ["Смета «Стандарт»", smetaP("standard")],
   ["Смета «Максимум»", smetaP("max")],
-  ["«Дорого»", "Розумію. Якщо сайт приведе хоча б 2–3 нових клієнтки на тиждень, він окупиться за місяць. Є і простіший варіант — «Старт» за 1 990 zł, без кабінету. Пізніше можна докупити."],
+  ["«Дорого»", "Розумію. Якщо сайт приведе хоча б 2–3 нових клієнтки на тиждень, він окупиться за місяць. Є і простіший варіант — «Старт» за 1 490 zł, без кабінету. Пізніше можна докупити."],
   ["«Есть Booksy»", "Booksy залишається, якщо вам зручно. Але там поруч з вами — конкуренти, і за це ви платите щомісяця. Свій сайт польською — тільки ваш: з вашою назвою, фото робіт і відгуками, і його знаходять у Google."],
   ["«Есть Instagram»", "Instagram залишається. Просто зараз запис іде через директ: клієнтка пише, чекає, а вночі чи коли ви зайняті — йде до іншої студії. На сайті вона бачить вільний час і записується сама."],
   ["«Подумаю»", "Звісно! Підкажіть, що саме бентежить — ціна, строк чи щось у функціях? Може, я одразу відповім 🙂"],
@@ -162,7 +162,7 @@ const SCRIPTS_PL = [
   ["Смета «Start»", smetaPL("start")],
   ["Смета «Standard»", smetaPL("standard")],
   ["Смета «Maksimum»", smetaPL("max")],
-  ["«Drogo»", "Rozumiem. Jeśli strona przyprowadzi choćby 2–3 nowe klientki tygodniowo, zwróci się w miesiąc. Jest też prostszy wariant — „Start” za 1 990 zł, bez panelu. Później można go rozszerzyć."],
+  ["«Drogo»", "Rozumiem. Jeśli strona przyprowadzi choćby 2–3 nowe klientki tygodniowo, zwróci się w miesiąc. Jest też prostszy wariant — „Start” za 1 490 zł, bez panelu. Później można go rozszerzyć."],
   ["«Mamy Booksy»", "Booksy może zostać. Ale tam obok Państwa są konkurenci i płacą Państwo co miesiąc. Własna strona jest tylko Państwa: z nazwą, zdjęciami prac i opiniami — i znajdą ją klienci w Google."],
   ["«Mamy Instagram»", "Instagram zostaje. Teraz rezerwacja idzie przez wiadomości: klientka pisze, czeka, a wieczorem wybiera inny salon. Na stronie widzi wolne terminy i zapisuje się sama."],
   ["«Zastanowię się»", "Oczywiście! Proszę dać znać, co budzi wątpliwości — cena, termin czy funkcje? Może od razu odpowiem 🙂"],
